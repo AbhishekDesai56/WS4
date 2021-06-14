@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Demo Flexbox 3</title>
+</head>
+<style>
+    body {
+        padding: 2em;
+    }
+
+    .headerContainer {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background: tomato;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .footerContainer {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background: limegreen;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .mainContainer {
+        display: flex;
+        flex-wrap: row wrap;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .mainContentItem {
+        text-align: left;
+        background-color: deepskyblue;
+    }
+
+    article {
+        padding: 10px;
+        margin: 10px;
+        background-color: aqua;
+    }
+
+    .aSideContainer,
+    .navContainer {
+        flex: 1 0 0;
+        border: 0px solid green;
+    }
+
+    .aSideContainer {
+        background-color: gold;
+    }
+
+    .navContainer {
+        background-color: hotpink;
+    }
+
+    ul,
+    li {
+        list-style-type: none;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .mainContentItem {
+        flex: 3 0px
+    }
+</style>
+
+<body>
+    <header class="headerContainer">
+        <h1>Header - Practice1 Flexbox Example</h1>
+    </header>
+    <div class="mainContainer">
+        <section class="mainContentItem">
+            <article>
+                <h2>First article<h2>
+                        <p>Tacos actually microdosing, pour-over semantics banjo chicharrones retro fanny, Tacos
+                            actually microdosing, pour-over semantics banjo chicharrones retro fanny, Tacos actually
+                            microdosing, pour-over semantics banjo chicharrones retro fanny</p>
+            </article>
+            <article>
+                <h2>Second article<h2>
+                        <p>Tacos actually microdosing, pour-over semantics banjo chicharrones retro fanny, Tacos
+                            actually microdosing, pour-over semantics banjo chicharrones retro fanny, Tacos actually
+                            microdosing, pour-over semantics banjo chicharrones retro fanny</p>
+            </article>
+            <article>
+                <h2>Third article<h2>
+                        <p>Tacos actually microdosing, pour-over semantics banjo chicharrones retro fanny, Tacos
+                            actually microdosing, pour-over semantics banjo chicharrones retro fanny, Tacos actually
+                            microdosing, pour-over semantics banjo chicharrones retro fanny</p>
+            </article>
+        </section>
+        <aside class="aSideContainer">
+            <div class="center">Aside</div>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+        </aside>
+        <nav class="navContainer">
+            <div class="center">Nav Bar</div>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+        </nav>
+    </div>
+    <footer class="footerContainer">Footer</footer>
+</body>
+</html>
